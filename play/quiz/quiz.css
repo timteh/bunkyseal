@@ -1,0 +1,17 @@
+/* BK-007 quiz add-ons; base look comes from ../style.css (BK-005). */
+.kicker{color:var(--open);font-weight:700;margin:0}
+.primary{border-color:var(--open)}
+#start{margin:1rem 0}
+#q-text{font-size:1.25rem;margin:.25rem 0 .5rem}
+#q-text:focus{outline:none}
+#q-text:focus-visible{outline:3px solid var(--focus)}
+.answers{display:flex;flex-direction:column;gap:.5rem;margin:.75rem 0}
+.answers button{width:100%;justify-content:flex-start;text-align:left;white-space:normal;overflow-wrap:anywhere}
+.answers button[aria-pressed="true"]{border-color:var(--seal);background:#263526}
+.answers button[aria-pressed="true"]::before{content:"\2713\00a0";color:var(--seal);font-weight:700}
+.nav{display:flex;gap:.5rem;justify-content:space-between;flex-wrap:wrap}
+#r-title{font-size:1.5rem;margin:0 0 .5rem}
+.blurb{margin:.25rem 0 .75rem}
+.rcard{display:block;width:100%;height:auto;border-radius:8px;margin:.5rem 0 1rem}
+#fallback{margin-top:.75rem}
+.mascot{object-fit:contain}
