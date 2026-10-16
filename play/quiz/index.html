@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Which bunker seal are you? ($BUNKY)</title>
+<link rel="icon" href="../art/bolt.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="quiz.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to quiz</a>
+<div class="w">
+<header>
+<img class="mascot" src="../art/02-helmet-on.svg" alt="" width="64" height="64">
+<div>
+<h1>Which bunker seal are you?</h1>
+<p class="sub">Six questions. Six seals. Your answers stay in this browser.</p>
+</div>
+</header>
+<main id="main">
+<section id="start" aria-label="Start">
+<button type="button" id="btn-start" class="primary" hidden>Start the quiz</button>
+</section>
+<section id="quiz" aria-labelledby="q-text" hidden>
+<p id="q-prog" class="meta-line">Question 1 of 6</p>
+<h2 id="q-text" tabindex="-1"></h2>
+<div id="answers" class="answers" role="group" aria-labelledby="q-text"></div>
+<div class="nav">
+<button type="button" id="btn-back">Back</button>
+<button type="button" id="btn-see" class="primary" hidden>See my seal</button>
+</div>
+</section>
+<noscript><p class="note">This quiz needs JavaScript.</p></noscript>
+</main>
+<aside class="disclosure" aria-label="Creator holdings disclosure">
+<p id="disclosure">Tim created $BUNKY & holds ~29.4% (incl. 20.48% locked till Jan 1, 2027), as of Oct 16. Launched via QSPHINX. Not financial advice.</p>
+</aside>
+</div>
+<script src="questions.js"></script>
+<script src="quiz.js"></script>
+</body>
+</html>
