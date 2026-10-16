@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Seal the Bunker — daily puzzle ($BUNKY)</title>
+<link rel="icon" href="art/bolt.svg" type="image/svg+xml">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to puzzle</a>
+<div class="w">
+<header>
+<img class="mascot" src="art/02-helmet-on.svg" alt="" width="64" height="64">
+<div>
+<h1>Seal the Bunker</h1>
+<p class="sub">Tap a bolt to flip it and the bolts next to it. Lock all 16 in as few taps as you can.</p>
+</div>
+</header>
+<main id="main">
+<p id="status" class="status" role="status" aria-live="polite"></p>
+<p id="badge" class="badge" hidden></p>
+<p id="note" class="note" role="note" hidden></p>
+<section id="play" aria-labelledby="play-title" hidden>
+<h2 id="play-title" class="meta-line"><span id="pnum">Puzzle</span> <span id="preview" class="badge" hidden>preview</span></h2>
+<p id="preview-line" class="note" hidden>Preview. Puzzle #1 opens Saturday, Oct 17 at midnight ET.</p>
+<p class="meta-line"><span id="count">Taps: 0/12</span> · <span id="par">Par: unavailable</span></p>
+<div id="board" class="board" role="group" aria-label="Bunker door, 4 by 4 bolts" aria-describedby="help"></div>
+<p id="help" class="help">Arrow keys move between bolts. Enter or Space flips.</p>
+</section>
+<section id="result" class="card" aria-labelledby="result-title" hidden>
+<h2 id="result-title" tabindex="-1">Result</h2>
+<p id="result-line"></p>
+<pre id="result-grid" class="grid-txt" aria-label="Final board"></pre>
+<p><span id="streak">Streak: 0</span> · <span id="countdown">Next puzzle in --:--</span></p>
+<p class="foot">Your streak lives only in this browser. It's just for fun and doesn't unlock anything.</p>
+<div id="share" class="share">
+<button type="button" id="btn-copy">Copy</button>
+<button type="button" id="btn-native" hidden>Share…</button>
+<a id="btn-x" class="btn" target="_blank" rel="noopener noreferrer" href="#">Post on X</a>
+<a id="btn-bsky" class="btn" target="_blank" rel="noopener noreferrer" href="#">Post on Bluesky</a>
+</div>
+<p id="share-off" class="note" hidden>Sharing unavailable</p>
+<div id="fallback" hidden>
+<label for="fallback-txt" id="fallback-lbl">Press and hold to copy</label>
+<textarea id="fallback-txt" readonly rows="8"></textarea>
+</div>
+<p id="copied" class="sr" role="status" aria-live="polite"></p>
+</section>
+<p id="rollover" class="note" role="status" hidden>A new puzzle is ready. <a href="./">Reload to play it.</a></p>
+</main>
+<aside class="disclosure" aria-label="Creator holdings disclosure">
+<p id="disclosure"></p>
+<noscript><p class="ns">This puzzle needs JavaScript.</p><p class="ns-disc">Tim created $BUNKY & holds ~29.4% (incl. 20.48% locked till Jan 1, 2027), as of Oct 16. Launched via QSPHINX. Not financial advice.</p></noscript>
+</aside>
+</div>
+<script src="disclosure.js"></script>
+<script src="game.js"></script>
+<script src="state.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
