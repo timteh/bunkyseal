@@ -1,67 +1,76 @@
 {
- "generated_at_et": "2026-10-16 08:57:34 EDT",
+ "generated_at_et": "2026-10-16 11:57:45 EDT",
  "error": null,
  "stale_after_hours": 2,
  "metrics": {
   "bluesky_followers": {
-   "value": 7,
-   "ts_et": "2026-10-16 08:28:49 EDT",
-   "source_url": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=bunkyseal.bsky.social",
+   "value": 8,
+   "ts_et": "2026-10-16 11:57:21 EDT",
+   "source_url": "https://bsky.app/profile/bunkyseal.bsky.social",
    "status": "OK",
    "stale": false
   },
   "curve_pct": {
-   "value": 33.05,
-   "ts_et": "2026-10-16 08:57:29 EDT",
+   "value": 32.68,
+   "ts_et": "2026-10-16 11:57:21 EDT",
    "source_url": "https://solscan.io/account/FR9Xc6fzAVJXNBbL6RdTfUksW6hN4FZbeQrjEdbpnJqN",
    "status": "OK",
    "stale": false
   },
   "curve_token_balance": {
-   "value": 531006779.878932,
-   "ts_et": "2026-10-16 08:57:29 EDT",
+   "value": 533896636.156197,
+   "ts_et": "2026-10-16 11:57:21 EDT",
    "source_url": "https://solscan.io/account/FR9Xc6fzAVJXNBbL6RdTfUksW6hN4FZbeQrjEdbpnJqN",
    "status": "OK",
    "stale": false
   },
   "discord_members": {
    "value": 23,
-   "ts_et": "2026-10-16 08:28:49 EDT",
-   "source_url": "https://discord.com/api/v9/invites/djE28VvPF?with_counts=true",
+   "ts_et": "2026-10-16 11:57:21 EDT",
+   "source_url": "https://discord.gg/djE28VvPF",
    "status": "OK",
    "stale": false
   },
   "holders_real": {
-   "value": null,
-   "ts_et": "2026-10-16 08:57:29 EDT",
-   "source_url": "",
-   "status": "UNSOURCED",
+   "value": 8,
+   "ts_et": "2026-10-16 11:57:21 EDT",
+   "source_url": "https://solscan.io/token/GPojeXRcXthWBMWxWC6iY5TMjY8dLf25Q2Ft4kMVRwD4#holders",
+   "status": "OK",
    "stale": false
   },
   "holders_total": {
    "value": null,
-   "ts_et": "2026-10-16 08:57:29 EDT",
+   "ts_et": "2026-10-16 11:57:21 EDT",
    "source_url": "",
    "status": "UNSOURCED",
    "stale": false
   },
   "tg_members": {
-   "value": 232,
-   "ts_et": "2026-10-16 08:57:29 EDT",
+   "value": 238,
+   "ts_et": "2026-10-16 11:57:21 EDT",
    "source_url": "https://t.me/bunkyseal",
    "status": "UNVERIFIED",
    "stale": false
   },
   "x_followers": {
    "value": null,
-   "ts_et": "2026-10-16 08:57:29 EDT",
+   "ts_et": "2026-10-16 11:57:21 EDT",
    "source_url": "https://x.com/BunkySeal",
    "status": "UNSOURCED",
    "stale": false
   }
  },
  "series": {
-  "holders_real": [],
+  "holders_real": [
+   [
+    "2026-10-16 11:54:45 EDT",
+    8
+   ],
+   [
+    "2026-10-16 11:57:21 EDT",
+    8
+   ]
+  ],
   "curve_pct": [
    [
     "2026-10-15 16:11:59 EDT",
@@ -414,15 +423,88 @@
    [
     "2026-10-16 08:57:29 EDT",
     33.05
+   ],
+   [
+    "2026-10-16 09:05:01 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 09:08:07 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 09:24:01 EDT",
+    33.18
+   ],
+   [
+    "2026-10-16 09:30:56 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 09:34:57 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 09:56:35 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 10:05:01 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 10:22:01 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 10:29:48 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 10:32:44 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 10:59:06 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 11:05:01 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 11:26:14 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 11:28:48 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 11:29:01 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 11:30:13 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 11:54:45 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 11:57:21 EDT",
+    32.68
    ]
   ]
  },
  "chart": {
-  "metric": "curve_pct",
-  "label": "Bonding curve % over time (holder history unavailable)"
+  "metric": "holders_real",
+  "label": "Real holders over time"
  },
  "holders": {
-  "available": false,
-  "message": "Holder count unavailable — no free public source yet"
+  "available": true,
+  "stale": false,
+  "message": null
  }
 }

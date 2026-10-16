@@ -1,10 +1,40 @@
-:root{--bg:#EAA400;--ink:#1d1d1b;--card:#fff8e6;--olive:#556b2f}
-*{box-sizing:border-box}body{margin:0;font:16px/1.4 system-ui,sans-serif;background:var(--bg);color:var(--ink);padding:16px}
-h1{margin:0;font-size:2rem}h2{margin:0 0 8px;font-size:1.1rem;color:var(--olive)}.sub{margin:4px 0}.meta{font-size:.85rem}.meta a{color:#3a4a1d;text-decoration:underline}
+:root{--bg:#E8A70C;--ink:#1b1b1b;--olive:#4b5d2a;--olive-d:#2f3d16;--card:#fff;--cream:#fdf6e3;--alert:#a82a1e}
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;font-size:16px;line-height:1.5;background:var(--bg);color:var(--ink)}
+.w{max-width:1120px;margin:0 auto;padding:20px 16px 32px}
+h1{margin:0;font-size:clamp(1.75rem,5vw,2.6rem);line-height:1.15}.tk{color:var(--olive-d)}
+h2{margin:0 0 12px;font-size:1.15rem;color:var(--olive-d);border-bottom:3px solid var(--ink);padding-bottom:6px}
+.sub{margin:6px 0 12px;max-width:60ch}
+.asof{display:inline-flex;flex-wrap:wrap;align-items:center;gap:8px;margin:0 0 12px;background:var(--card);border:3px solid var(--ink);border-radius:10px;padding:8px 12px;font-weight:600}
+.asof-k{background:var(--olive);color:#fff;border-radius:6px;padding:2px 8px;font-size:.8rem;text-transform:uppercase;letter-spacing:.04em}
+.asof-v{font-family:ui-monospace,Menlo,Consolas,monospace;font-size:.95rem}
+.meta{font-size:.85rem;color:#333}.meta a,td a{color:var(--olive-d);text-decoration:underline;font-weight:600}
 .grid{display:grid;grid-template-columns:1fr;gap:16px;margin:16px 0}
-.card{background:var(--card);border:3px solid var(--ink);border-radius:14px;padding:14px}
-table{width:100%;border-collapse:collapse}td{padding:10px 4px;border-bottom:1px solid #0002;vertical-align:top;min-height:44px}
-td.v{font-weight:700;text-align:right}.st{font-size:.75rem;padding:2px 6px;border-radius:6px;background:#0001}
-.st.STALE,.st.ERROR{background:#c0392b;color:#fff}.banner{background:#c0392b;color:#fff;padding:12px;border-radius:10px;font-weight:600}
-.disclosure{margin-bottom:16px}svg{width:100%;height:auto;display:block}a{color:var(--olive);min-height:44px}
-@media(min-width:900px){.grid{grid-template-columns:3fr 2fr}}
+.card{background:var(--card);border:3px solid var(--ink);border-radius:14px;padding:16px;min-width:0}
+.chart{min-height:120px}.state{margin:0;padding:24px 8px;text-align:center;color:#333;font-style:italic}
+#chart:not(:has(svg)){display:flex;align-items:center;justify-content:center;padding:24px 8px;color:#333;font-style:italic;text-align:center}
+table{width:100%;border-collapse:collapse}
+td{padding:12px 4px;border-bottom:1px solid #0003;vertical-align:top}tr:last-child td{border-bottom:0}
+td:first-child{font-weight:600}td:first-child .meta{font-weight:400;display:inline-block;margin-top:2px;word-break:break-word}
+td.v{font-weight:700;text-align:right;font-variant-numeric:tabular-nums;font-size:1.05rem;max-width:45%}
+.st{display:inline-block;font-size:.72rem;font-weight:700;padding:2px 7px;border-radius:6px;background:#ececec;color:var(--ink);border:1px solid #0004;margin-top:4px;letter-spacing:.03em}
+.st.OK{background:#e3ebd3;color:var(--olive-d)}
+.st.STALE,.st.ERROR{background:var(--alert);color:#fff;border-color:var(--alert)}
+.st.UNVERIFIED,.st.UNSOURCED{background:#fdf0cf;color:#5a3d00}
+.banner{background:var(--alert);color:#fff;padding:12px 14px;border-radius:10px;font-weight:600;border:3px solid var(--ink);margin:0 0 4px}
+.disclosure{margin:0 0 16px;background:var(--cream)}.disclosure p{margin:0;font-weight:600}
+svg{width:100%;height:auto;display:block}svg text{fill:var(--ink)}
+footer{text-align:center;padding:12px 0 0}
+a{color:var(--olive-d)}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:var(--ink);border:3px solid var(--ink);padding:8px 12px;border-radius:8px;z-index:9}.skip:focus{left:8px}
+a:focus-visible,button:focus-visible,[tabindex]:focus-visible{outline:4px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 7px #fff;border-radius:4px}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+@media(min-width:900px){.w{padding:32px 24px 40px}.grid{grid-template-columns:3fr 2fr}}
+@media(max-width:480px){td.v{font-size:.95rem}td{padding:10px 2px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+tbody:has(tr:not(.loading)) tr.loading{display:none}
+body:has(#banner:not([hidden])) tr.loading td{font-size:0}
+body:has(#banner:not([hidden])) tr.loading td::after{content:"Numbers unavailable. See the notice above.";font-size:1rem}
+.cap{margin:8px 0 0;font-size:.9rem;color:#1b1b1b;border-left:4px solid #4b5d2a;padding:4px 0 4px 10px}
+.derr #chart,.derr #chart-note,.derr .cap,.derr #tbl{display:none}
+.derr main .card::after{content:"Unavailable while the data has an error.";display:block;padding:24px 8px;text-align:center;font-style:italic;color:#333}
