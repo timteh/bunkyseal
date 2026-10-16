@@ -1,5 +1,5 @@
 {
- "generated_at_et": "2026-10-16 01:28:34 EDT",
+ "generated_at_et": "2026-10-16 01:32:51 EDT",
  "error": null,
  "stale_after_hours": 2,
  "metrics": {
@@ -12,7 +12,7 @@
   },
   "curve_pct": {
    "value": 33.05,
-   "ts_et": "2026-10-16 01:05:01 EDT",
+   "ts_et": "2026-10-16 01:28:56 EDT",
    "source_url": "https://solscan.io/account/FR9Xc6fzAVJXNBbL6RdTfUksW6hN4FZbeQrjEdbpnJqN",
    "status": "OK",
    "stale": false
@@ -32,31 +32,31 @@
    "stale": true
   },
   "holders_real": {
-   "value": null,
-   "ts_et": "2026-10-16 01:05:01 EDT",
-   "source_url": "",
-   "status": "UNSOURCED",
+   "value": 12,
+   "ts_et": "2026-10-16 01:28:56 EDT",
+   "source_url": "https://api.mainnet-beta.solana.com#getProgramAccounts (raw 13 minus churn70 61NP6)",
+   "status": "OK",
    "stale": false
   },
   "holders_total": {
-   "value": null,
-   "ts_et": "2026-10-16 01:05:01 EDT",
-   "source_url": "",
-   "status": "UNSOURCED",
+   "value": 13,
+   "ts_et": "2026-10-16 01:28:56 EDT",
+   "source_url": "https://api.mainnet-beta.solana.com#getProgramAccounts",
+   "status": "OK",
    "stale": false
   },
   "tg_members": {
    "value": 223,
-   "ts_et": "2026-10-16 01:05:01 EDT",
+   "ts_et": "2026-10-16 01:28:56 EDT",
    "source_url": "https://t.me/bunkyseal",
    "status": "UNVERIFIED",
    "stale": false
   },
   "x_followers": {
-   "value": null,
-   "ts_et": "2026-10-16 01:05:01 EDT",
-   "source_url": "https://x.com/BunkySeal",
-   "status": "UNSOURCED",
+   "value": 42,
+   "ts_et": "2026-10-16 01:28:56 EDT",
+   "source_url": "X API users/by/username/BunkySeal",
+   "status": "OK",
    "stale": false
   }
  },
@@ -73,6 +73,10 @@
    [
     "2026-10-15 22:50:12 EDT",
     22
+   ],
+   [
+    "2026-10-16 01:28:56 EDT",
+    12
    ]
   ],
   "curve_pct": [
@@ -287,6 +291,10 @@
    [
     "2026-10-16 01:05:01 EDT",
     33.05
+   ],
+   [
+    "2026-10-16 01:28:56 EDT",
+    33.05
    ]
   ]
  },
@@ -295,7 +303,8 @@
   "label": "Real holders over time"
  },
  "holders": {
-  "available": false,
-  "message": "Holder count unavailable — no free public source yet"
+  "available": true,
+  "stale": false,
+  "message": null
  }
 }
