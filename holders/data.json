@@ -1,5 +1,5 @@
 {
- "generated_at_et": "2026-10-16 02:05:02 EDT",
+ "generated_at_et": "2026-10-16 03:07:21 EDT",
  "error": null,
  "stale_after_hours": 2,
  "metrics": {
@@ -12,14 +12,14 @@
   },
   "curve_pct": {
    "value": 33.05,
-   "ts_et": "2026-10-16 02:05:01 EDT",
+   "ts_et": "2026-10-16 03:05:02 EDT",
    "source_url": "https://solscan.io/account/FR9Xc6fzAVJXNBbL6RdTfUksW6hN4FZbeQrjEdbpnJqN",
    "status": "OK",
    "stale": false
   },
   "curve_token_balance": {
    "value": 531006779.878932,
-   "ts_et": "2026-10-16 02:05:01 EDT",
+   "ts_et": "2026-10-16 03:05:02 EDT",
    "source_url": "https://solscan.io/account/FR9Xc6fzAVJXNBbL6RdTfUksW6hN4FZbeQrjEdbpnJqN",
    "status": "OK",
    "stale": false
@@ -33,28 +33,28 @@
   },
   "holders_real": {
    "value": null,
-   "ts_et": "2026-10-16 02:05:01 EDT",
+   "ts_et": "2026-10-16 03:05:02 EDT",
    "source_url": "",
    "status": "UNSOURCED",
    "stale": false
   },
   "holders_total": {
    "value": null,
-   "ts_et": "2026-10-16 02:05:01 EDT",
+   "ts_et": "2026-10-16 03:05:02 EDT",
    "source_url": "",
    "status": "UNSOURCED",
    "stale": false
   },
   "tg_members": {
    "value": null,
-   "ts_et": "2026-10-16 02:05:01 EDT",
+   "ts_et": "2026-10-16 03:05:02 EDT",
    "source_url": "https://t.me/bunkyseal",
    "status": "ERROR",
    "stale": false
   },
   "x_followers": {
    "value": null,
-   "ts_et": "2026-10-16 02:05:01 EDT",
+   "ts_et": "2026-10-16 03:05:02 EDT",
    "source_url": "https://x.com/BunkySeal",
    "status": "UNSOURCED",
    "stale": false
@@ -285,6 +285,18 @@
    ],
    [
     "2026-10-16 02:05:01 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 02:24:17 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 02:25:30 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 03:05:02 EDT",
     33.05
    ]
   ]
