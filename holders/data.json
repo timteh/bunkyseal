@@ -1,5 +1,5 @@
 {
- "generated_at_et": "2026-10-16 01:32:51 EDT",
+ "generated_at_et": "2026-10-16 02:05:02 EDT",
  "error": null,
  "stale_after_hours": 2,
  "metrics": {
@@ -12,14 +12,14 @@
   },
   "curve_pct": {
    "value": 33.05,
-   "ts_et": "2026-10-16 01:28:56 EDT",
+   "ts_et": "2026-10-16 02:05:01 EDT",
    "source_url": "https://solscan.io/account/FR9Xc6fzAVJXNBbL6RdTfUksW6hN4FZbeQrjEdbpnJqN",
    "status": "OK",
    "stale": false
   },
   "curve_token_balance": {
    "value": 531006779.878932,
-   "ts_et": "2026-10-16 01:05:01 EDT",
+   "ts_et": "2026-10-16 02:05:01 EDT",
    "source_url": "https://solscan.io/account/FR9Xc6fzAVJXNBbL6RdTfUksW6hN4FZbeQrjEdbpnJqN",
    "status": "OK",
    "stale": false
@@ -32,53 +32,36 @@
    "stale": true
   },
   "holders_real": {
-   "value": 12,
-   "ts_et": "2026-10-16 01:28:56 EDT",
-   "source_url": "https://api.mainnet-beta.solana.com#getProgramAccounts (raw 13 minus churn70 61NP6)",
-   "status": "OK",
+   "value": null,
+   "ts_et": "2026-10-16 02:05:01 EDT",
+   "source_url": "",
+   "status": "UNSOURCED",
    "stale": false
   },
   "holders_total": {
-   "value": 13,
-   "ts_et": "2026-10-16 01:28:56 EDT",
-   "source_url": "https://api.mainnet-beta.solana.com#getProgramAccounts",
-   "status": "OK",
+   "value": null,
+   "ts_et": "2026-10-16 02:05:01 EDT",
+   "source_url": "",
+   "status": "UNSOURCED",
    "stale": false
   },
   "tg_members": {
-   "value": 223,
-   "ts_et": "2026-10-16 01:28:56 EDT",
+   "value": null,
+   "ts_et": "2026-10-16 02:05:01 EDT",
    "source_url": "https://t.me/bunkyseal",
-   "status": "UNVERIFIED",
+   "status": "ERROR",
    "stale": false
   },
   "x_followers": {
-   "value": 42,
-   "ts_et": "2026-10-16 01:28:56 EDT",
-   "source_url": "X API users/by/username/BunkySeal",
-   "status": "OK",
+   "value": null,
+   "ts_et": "2026-10-16 02:05:01 EDT",
+   "source_url": "https://x.com/BunkySeal",
+   "status": "UNSOURCED",
    "stale": false
   }
  },
  "series": {
-  "holders_real": [
-   [
-    "2026-10-15 20:24:51 EDT",
-    14
-   ],
-   [
-    "2026-10-15 22:24:40 EDT",
-    24
-   ],
-   [
-    "2026-10-15 22:50:12 EDT",
-    22
-   ],
-   [
-    "2026-10-16 01:28:56 EDT",
-    12
-   ]
-  ],
+  "holders_real": [],
   "curve_pct": [
    [
     "2026-10-15 16:11:59 EDT",
@@ -295,16 +278,23 @@
    [
     "2026-10-16 01:28:56 EDT",
     33.05
+   ],
+   [
+    "2026-10-16 01:51:01 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 02:05:01 EDT",
+    33.05
    ]
   ]
  },
  "chart": {
-  "metric": "holders_real",
-  "label": "Real holders over time"
+  "metric": "curve_pct",
+  "label": "Bonding curve % over time (holder history unavailable)"
  },
  "holders": {
-  "available": true,
-  "stale": false,
-  "message": null
+  "available": false,
+  "message": "Holder count unavailable — no free public source yet"
  }
 }

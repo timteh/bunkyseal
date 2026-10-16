@@ -4,10 +4,12 @@ const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",
 const $=s=>document.querySelector(s);
 function fail(msg){const b=$("#banner");b.hidden=false;b.textContent=msg;}
 function fmt(m,v){if(v==null)return"—";if(m.endsWith("pct"))return Number(v).toFixed(2)+"%";return Math.round(Number(v)).toLocaleString();}
-function row(name,m){const tr=document.createElement("tr");let val;
- if(name.startsWith("holders")&&(m==null||m.value==null))val="Holder count unavailable — no free public source yet";else val=fmt(name,m&&m.value);
+function pt(x){const m=/^(\d{4}-\d\d-\d\d) (\d\d:\d\d(?::\d\d)?) (EDT|EST)$/.exec(String(x||""));return m?Date.parse(m[1]+"T"+m[2]+(m[3]==="EDT"?"-04:00":"-05:00")):NaN;}
+function fresh(m,d){if(!m||m.value==null||m.status!=="OK"||m.stale)return false;const t=pt(m.ts_et),g=pt(d&&d.generated_at_et);if(!isFinite(t)||!isFinite(g))return false;const h=Number(d.stale_after_hours)>0?Number(d.stale_after_hours):2;return g-t<=h*3600e3;}
+function row(name,m,d){const tr=document.createElement("tr");let val;const H=name.startsWith("holders");
+ if(H&&(m==null||m.value==null))val="Holder count unavailable — no free public source yet";else if(H&&!fresh(m,d))val="Holder count unavailable (latest reading not verified or stale)";else val=fmt(name,m&&m.value);
  const u=m&&m.source_url||"";const src=/^https:\/\//.test(u)?`<a href="${esc(u)}" rel="noopener nofollow">source</a>`:(u?esc(u):"no source");
- const S=m&&(m.stale?"STALE":m.status);const st=S?`<span class="st ${esc(S)}">${esc(S)}</span>`:"";
+ const S=m&&(m.stale||(H&&m.status==="OK"&&m.value!=null&&!fresh(m,d))?"STALE":m.status);const st=S?`<span class="st ${esc(S)}">${esc(S)}</span>`:"";
  tr.innerHTML=`<td>${esc(LABELS[name]||name)}<br><span class="meta">last updated ${esc(m&&m.ts_et||"never")} · ${src}</span> ${st}</td><td class="v">${esc(val)}</td>`;return tr;}
 function chart(pts,label,unit){const W=600,H=260,p=30,pl=60;if(pts.length<2){$("#chart").textContent="Not enough data points yet.";return;}
  const xs=pts.map((_,i)=>i),ys=pts.map(q=>Number(q[1]));const mn=Math.min(...ys),mx=Math.max(...ys),r=mx-mn||1;
@@ -19,10 +21,10 @@ fetch("data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()}
  $("#gen").textContent="Data built "+(d.generated_at_et||"unknown");
  if(d.error){fail("Stats are unavailable right now: the metrics log could not be read.");}
  const M=d.metrics||{};const tb=$("#tbl tbody");
- SHOW.forEach(n=>tb.appendChild(row(n,M[n])));
+ SHOW.forEach(n=>tb.appendChild(row(n,M[n],d)));
  if(SHOW.some(n=>M[n]&&(M[n].stale||M[n].status==="STALE")))fail("Some numbers are more than 2 hours old and marked STALE.");
  const s=d.series||{};const h=(s.holders_real||[]);
- const hm=M.holders_real;const hOk=hm&&hm.value!=null&&hm.status==="OK"&&!hm.stale;
+ const hm=M.holders_real;const hOk=fresh(hm,d);
  if(h.length>=2&&hOk){chart(h,"Real holders over time","holders_real");$("#chart-note").textContent="Each dot is one verified holder count.";}
  else{chart(s.curve_pct||[],"Bonding curve % over time","curve_pct");$("#chart-note").textContent=h.length>=2?"The latest holder count isn't verified right now, so this shows curve % instead.":"Holder history isn't available yet, so this shows curve % instead.";}
 }).catch(()=>{fail("Couldn't load the stats right now. The data file is missing or broken.");$("#chart").textContent="No data.";});
