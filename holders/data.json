@@ -1,60 +1,60 @@
 {
- "generated_at_et": "2026-10-16 06:05:01 EDT",
+ "generated_at_et": "2026-10-16 08:57:34 EDT",
  "error": null,
  "stale_after_hours": 2,
  "metrics": {
   "bluesky_followers": {
    "value": 7,
-   "ts_et": "2026-10-16 05:25:23 EDT",
+   "ts_et": "2026-10-16 08:28:49 EDT",
    "source_url": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=bunkyseal.bsky.social",
    "status": "OK",
    "stale": false
   },
   "curve_pct": {
    "value": 33.05,
-   "ts_et": "2026-10-16 06:05:01 EDT",
+   "ts_et": "2026-10-16 08:57:29 EDT",
    "source_url": "https://solscan.io/account/FR9Xc6fzAVJXNBbL6RdTfUksW6hN4FZbeQrjEdbpnJqN",
    "status": "OK",
    "stale": false
   },
   "curve_token_balance": {
    "value": 531006779.878932,
-   "ts_et": "2026-10-16 06:05:01 EDT",
+   "ts_et": "2026-10-16 08:57:29 EDT",
    "source_url": "https://solscan.io/account/FR9Xc6fzAVJXNBbL6RdTfUksW6hN4FZbeQrjEdbpnJqN",
    "status": "OK",
    "stale": false
   },
   "discord_members": {
-   "value": 22,
-   "ts_et": "2026-10-16 05:25:23 EDT",
+   "value": 23,
+   "ts_et": "2026-10-16 08:28:49 EDT",
    "source_url": "https://discord.com/api/v9/invites/djE28VvPF?with_counts=true",
    "status": "OK",
    "stale": false
   },
   "holders_real": {
    "value": null,
-   "ts_et": "2026-10-16 06:05:01 EDT",
+   "ts_et": "2026-10-16 08:57:29 EDT",
    "source_url": "",
    "status": "UNSOURCED",
    "stale": false
   },
   "holders_total": {
    "value": null,
-   "ts_et": "2026-10-16 06:05:01 EDT",
+   "ts_et": "2026-10-16 08:57:29 EDT",
    "source_url": "",
    "status": "UNSOURCED",
    "stale": false
   },
   "tg_members": {
-   "value": 225,
-   "ts_et": "2026-10-16 06:05:01 EDT",
+   "value": 232,
+   "ts_et": "2026-10-16 08:57:29 EDT",
    "source_url": "https://t.me/bunkyseal",
    "status": "UNVERIFIED",
    "stale": false
   },
   "x_followers": {
    "value": null,
-   "ts_et": "2026-10-16 06:05:01 EDT",
+   "ts_et": "2026-10-16 08:57:29 EDT",
    "source_url": "https://x.com/BunkySeal",
    "status": "UNSOURCED",
    "stale": false
@@ -361,6 +361,58 @@
    ],
    [
     "2026-10-16 06:05:01 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 06:21:16 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 06:30:52 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 06:31:52 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 06:32:28 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 07:05:02 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 07:24:02 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 07:26:00 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 07:57:27 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 08:05:01 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 08:05:29 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 08:25:28 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 08:28:49 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 08:57:29 EDT",
     33.05
    ]
   ]
