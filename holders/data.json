@@ -1,60 +1,60 @@
 {
- "generated_at_et": "2026-10-16 11:57:45 EDT",
+ "generated_at_et": "2026-10-16 14:24:29 EDT",
  "error": null,
  "stale_after_hours": 2,
  "metrics": {
   "bluesky_followers": {
-   "value": 8,
-   "ts_et": "2026-10-16 11:57:21 EDT",
+   "value": 9,
+   "ts_et": "2026-10-16 14:24:14 EDT",
    "source_url": "https://bsky.app/profile/bunkyseal.bsky.social",
    "status": "OK",
    "stale": false
   },
   "curve_pct": {
    "value": 32.68,
-   "ts_et": "2026-10-16 11:57:21 EDT",
+   "ts_et": "2026-10-16 14:24:14 EDT",
    "source_url": "https://solscan.io/account/FR9Xc6fzAVJXNBbL6RdTfUksW6hN4FZbeQrjEdbpnJqN",
    "status": "OK",
    "stale": false
   },
   "curve_token_balance": {
    "value": 533896636.156197,
-   "ts_et": "2026-10-16 11:57:21 EDT",
+   "ts_et": "2026-10-16 14:24:14 EDT",
    "source_url": "https://solscan.io/account/FR9Xc6fzAVJXNBbL6RdTfUksW6hN4FZbeQrjEdbpnJqN",
    "status": "OK",
    "stale": false
   },
   "discord_members": {
-   "value": 23,
-   "ts_et": "2026-10-16 11:57:21 EDT",
+   "value": 24,
+   "ts_et": "2026-10-16 14:24:14 EDT",
    "source_url": "https://discord.gg/djE28VvPF",
    "status": "OK",
    "stale": false
   },
   "holders_real": {
    "value": 8,
-   "ts_et": "2026-10-16 11:57:21 EDT",
+   "ts_et": "2026-10-16 14:24:14 EDT",
    "source_url": "https://solscan.io/token/GPojeXRcXthWBMWxWC6iY5TMjY8dLf25Q2Ft4kMVRwD4#holders",
    "status": "OK",
    "stale": false
   },
   "holders_total": {
    "value": null,
-   "ts_et": "2026-10-16 11:57:21 EDT",
+   "ts_et": "2026-10-16 14:24:14 EDT",
    "source_url": "",
    "status": "UNSOURCED",
    "stale": false
   },
   "tg_members": {
-   "value": 238,
-   "ts_et": "2026-10-16 11:57:21 EDT",
+   "value": 240,
+   "ts_et": "2026-10-16 14:24:14 EDT",
    "source_url": "https://t.me/bunkyseal",
    "status": "UNVERIFIED",
    "stale": false
   },
   "x_followers": {
    "value": null,
-   "ts_et": "2026-10-16 11:57:21 EDT",
+   "ts_et": "2026-10-16 14:24:14 EDT",
    "source_url": "https://x.com/BunkySeal",
    "status": "UNSOURCED",
    "stale": false
@@ -68,6 +68,30 @@
    ],
    [
     "2026-10-16 11:57:21 EDT",
+    8
+   ],
+   [
+    "2026-10-16 12:05:01 EDT",
+    8
+   ],
+   [
+    "2026-10-16 12:21:46 EDT",
+    8
+   ],
+   [
+    "2026-10-16 12:22:17 EDT",
+    8
+   ],
+   [
+    "2026-10-16 12:25:10 EDT",
+    8
+   ],
+   [
+    "2026-10-16 12:27:48 EDT",
+    8
+   ],
+   [
+    "2026-10-16 14:24:14 EDT",
     8
    ]
   ],
@@ -494,6 +518,46 @@
    ],
    [
     "2026-10-16 11:57:21 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 12:05:01 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 12:21:46 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 12:22:17 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 12:25:10 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 12:27:48 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 12:52:44 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 13:24:00 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 13:30:30 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 13:55:01 EDT",
+    32.68
+   ],
+   [
+    "2026-10-16 14:24:14 EDT",
     32.68
    ]
   ]
