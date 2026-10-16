@@ -1,60 +1,60 @@
 {
- "generated_at_et": "2026-10-16 03:07:21 EDT",
+ "generated_at_et": "2026-10-16 06:05:01 EDT",
  "error": null,
  "stale_after_hours": 2,
  "metrics": {
   "bluesky_followers": {
    "value": 7,
-   "ts_et": "2026-10-15 19:22:18 EDT",
-   "source_url": "https://bsky.app/profile/bunkyseal.bsky.social",
-   "status": "STALE",
-   "stale": true
+   "ts_et": "2026-10-16 05:25:23 EDT",
+   "source_url": "https://public.api.bsky.app/xrpc/app.bsky.actor.getProfile?actor=bunkyseal.bsky.social",
+   "status": "OK",
+   "stale": false
   },
   "curve_pct": {
    "value": 33.05,
-   "ts_et": "2026-10-16 03:05:02 EDT",
+   "ts_et": "2026-10-16 06:05:01 EDT",
    "source_url": "https://solscan.io/account/FR9Xc6fzAVJXNBbL6RdTfUksW6hN4FZbeQrjEdbpnJqN",
    "status": "OK",
    "stale": false
   },
   "curve_token_balance": {
    "value": 531006779.878932,
-   "ts_et": "2026-10-16 03:05:02 EDT",
+   "ts_et": "2026-10-16 06:05:01 EDT",
    "source_url": "https://solscan.io/account/FR9Xc6fzAVJXNBbL6RdTfUksW6hN4FZbeQrjEdbpnJqN",
    "status": "OK",
    "stale": false
   },
   "discord_members": {
-   "value": 21,
-   "ts_et": "2026-10-15 18:24:03 EDT",
-   "source_url": "discord invite API djE28VvPF with_counts",
-   "status": "STALE",
-   "stale": true
+   "value": 22,
+   "ts_et": "2026-10-16 05:25:23 EDT",
+   "source_url": "https://discord.com/api/v9/invites/djE28VvPF?with_counts=true",
+   "status": "OK",
+   "stale": false
   },
   "holders_real": {
    "value": null,
-   "ts_et": "2026-10-16 03:05:02 EDT",
+   "ts_et": "2026-10-16 06:05:01 EDT",
    "source_url": "",
    "status": "UNSOURCED",
    "stale": false
   },
   "holders_total": {
    "value": null,
-   "ts_et": "2026-10-16 03:05:02 EDT",
+   "ts_et": "2026-10-16 06:05:01 EDT",
    "source_url": "",
    "status": "UNSOURCED",
    "stale": false
   },
   "tg_members": {
-   "value": null,
-   "ts_et": "2026-10-16 03:05:02 EDT",
+   "value": 225,
+   "ts_et": "2026-10-16 06:05:01 EDT",
    "source_url": "https://t.me/bunkyseal",
-   "status": "ERROR",
+   "status": "UNVERIFIED",
    "stale": false
   },
   "x_followers": {
    "value": null,
-   "ts_et": "2026-10-16 03:05:02 EDT",
+   "ts_et": "2026-10-16 06:05:01 EDT",
    "source_url": "https://x.com/BunkySeal",
    "status": "UNSOURCED",
    "stale": false
@@ -297,6 +297,70 @@
    ],
    [
     "2026-10-16 03:05:02 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 03:29:45 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 04:01:26 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 04:05:01 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 04:23:50 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 04:24:40 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 04:25:53 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 04:27:40 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 04:27:43 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 04:54:04 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 05:05:01 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 05:24:27 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 05:25:23 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 05:33:08 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 05:33:12 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 05:51:27 EDT",
+    33.05
+   ],
+   [
+    "2026-10-16 06:05:01 EDT",
     33.05
    ]
   ]
