@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Wear the bunker ring — fan frame ($BUNKY)</title>
+<meta name="description" content="Pick your own image. This page adds a fan ring + small seal badge and downloads a PNG in your browser. No upload. No server save. No wallet.">
+<link rel="icon" href="../favicon.ico">
+<link rel="icon" sizes="32x32" href="../favicon-32.png">
+<link rel="apple-touch-icon" href="../favicon-180.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+<div class="w">
+<header>
+  <h1>Wear the bunker ring <span class="seal" aria-hidden="true">🦭</span></h1>
+  <p class="lede" id="tool-chrome">
+    Pick your own image. This page adds a fan ring + small seal badge and downloads a PNG in your browser. No upload. No server save. No wallet. No CA on the image. The ring is not the @BunkySeal staff look — fans stay fans.
+  </p>
+</header>
+
+<main id="main" tabindex="-1">
+  <div class="stage">
+    <div class="canvas-wrap" aria-hidden="true">
+      <canvas id="out" width="1080" height="1080" role="img" aria-label="Preview of your image with the fan bunker ring and small seal badge"></canvas>
+    </div>
+
+    <div class="dropzone" id="dropzone">
+      <p><strong>Drop an image here</strong> or use Choose image.</p>
+      <p>Accepts image/* — PNG, JPEG, WebP, and similar. Output is a 1080×1080 PNG.</p>
+    </div>
+
+    <div class="actions">
+      <input type="file" id="file" accept="image/*" aria-label="Choose an image file">
+      <button type="button" class="file-btn" id="choose">Choose image</button>
+      <button type="button" id="download" disabled>Download PNG</button>
+    </div>
+
+    <p id="status" class="status" role="status" aria-live="polite"></p>
+  </div>
+
+  <div class="box">
+    <p style="margin:0"><strong>Local only.</strong> Your photo never leaves this browser tab. There is no upload, no server save, no wallet connect, and no contract address drawn on the composed image.</p>
+  </div>
+
+  <div class="box warn">
+    <p style="margin:0 0 8px"><strong>Staff never ask for your seed phrase or a wallet connect in DMs.</strong></p>
+    <p style="margin:0">Chat: <a href="https://t.me/bunkyseal" rel="noopener">t.me/bunkyseal</a>.</p>
+  </div>
+
+  <aside class="box" aria-label="Disclosure">
+    <p style="margin:0"><strong>Tim created $BUNKY &amp; holds ~29.4% (incl. 20.48% locked till Jan 1, 2027), as of Oct 16. Launched via QSPHINX. Not financial advice.</strong></p>
+  </aside>
+</main>
+
+<footer>
+  <p>Not financial advice. Stay safe out there. 🦭</p>
+  <p><a href="../">← Back to Bunker Seal</a> · <a href="../holders/">Bunker Ledger</a> · Chat <a href="https://t.me/bunkyseal" rel="noopener">t.me/bunkyseal</a></p>
+</footer>
+</div>
+<script src="app.js"></script>
+</body>
+</html>
