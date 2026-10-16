@@ -3,6 +3,7 @@ name: pfp-decode
 on:
   push:
     paths: ['pfp/*.png.b64', 'pfp/MANIFEST.txt']
+  workflow_dispatch:
 permissions:
   contents: write
 jobs:
@@ -27,4 +28,4 @@ jobs:
           git config user.name github-actions
           git config user.email github-actions@users.noreply.github.com
           git add pfp/*.png
-          if ! git diff --cached --quiet; then git commit -m "pfp: decode PNG (sha256 verified)"; git push; fi
+          if ! git diff --cached --quiet; then git commit -m "pfp: decode PNG (sha256 verified)"; git pull --rebase origin main; git push; fi
