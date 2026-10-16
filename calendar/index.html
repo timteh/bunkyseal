@@ -1,0 +1,40 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bunker calendar · Bunker Seal ($BUNKY)</title><meta name="description" content="Add scheduled public $BUNKY moments to your own calendar. Opt-in, no wallet, no account.">
+<link rel="icon" href="../favicon.ico"><link rel="apple-touch-icon" href="../favicon-180.png"><style>
+body{margin:0;font-family:system-ui,sans-serif;background:#E8A70C;color:#1b1b1b;line-height:1.6}
+.w{max-width:760px;margin:auto;padding:24px}header{text-align:center;padding:28px 0 8px}
+header img{width:120px;height:120px;border-radius:20px;background:#fff;border:5px solid #1b1b1b}
+h1{font-size:2.2em;margin:.3em 0}h2{color:#3a4a1d;border-bottom:3px solid #1b1b1b}
+.box{background:#fff;border:3px solid #1b1b1b;padding:16px;border-radius:10px;margin-bottom:16px}
+.btn{background:#4b5d2a;color:#fff;border:3px solid #1b1b1b;padding:10px 16px;border-radius:8px;font-weight:700;text-decoration:none;cursor:pointer;display:inline-block;margin:4px 4px 4px 0;min-height:44px;box-sizing:border-box;font-size:1rem}
+.btn.alt{background:#fff;color:#1b1b1b}
+.url{display:flex;flex-wrap:wrap;gap:8px;align-items:center;font-family:monospace;word-break:break-all;background:#f6f1e3;border:2px solid #1b1b1b;border-radius:8px;padding:8px}
+.url code{flex:1;min-width:0}
+ol.ev{list-style:none;padding:0;margin:0}ol.ev li{border-bottom:2px dashed #c9b98f;padding:10px 0}ol.ev li:last-child{border:0}
+ol.ev time{font-weight:700;display:block}
+.skip{position:absolute;left:-999px;top:8px;background:#fff;color:#1b1b1b;border:3px solid #1b1b1b;padding:8px 12px;border-radius:8px;z-index:9}.skip:focus{left:8px}
+a:focus-visible,button:focus-visible{outline:3px solid #1b1b1b;outline-offset:3px}
+a{color:#3a4a1d}footer{text-align:center;font-size:.9em;padding:24px}
+aside.disc{background:#fff;border:2px solid #1b1b1b;border-radius:8px;padding:10px 12px;font-size:.9em}
+</style></head><body><a class="skip" href="#main">Skip to content</a><div class="w">
+<header><img src="../logo.png" alt="Bunker Seal logo"><h1>Bunker calendar</h1>
+<p>Scheduled public $BUNKY moments, in your own calendar app. Your calendar does the reminding. No wallet, no account, no Telegram needed.</p></header>
+<main id="main" tabindex="-1">
+<div class="box"><h2 style="margin-top:0">Add it</h2>
+<p><a class="btn" href="webcal://timteh.github.io/bunkyseal/calendar/bunker.ics">Subscribe (Apple / Outlook)</a>
+<a class="btn alt" href="bunker.ics" download>Download .ics file</a></p>
+<p><strong>Google Calendar (on a computer):</strong> copy the link below, then in Google Calendar open <em>Other calendars</em>, choose <em>From URL</em>, and paste it. Google's phone apps can't subscribe by link, and Google can take up to a day to pick up changes.</p>
+<div class="url"><code id="u">https://timteh.github.io/bunkyseal/calendar/bunker.ics</code>
+<button class="btn" type="button" aria-describedby="u" onclick="var b=this;navigator.clipboard.writeText(document.getElementById('u').textContent).then(function(){b.textContent='Copied';document.getElementById('st').textContent='Calendar link copied.'})">Copy link</button></div>
+<p id="st" role="status" aria-live="polite" style="margin:.4em 0 0;min-height:1.2em"></p>
+<p><small>Opt-in only. We never send calendar invites. Remove it any time from your calendar app's settings.</small></p></div>
+<div class="box"><h2 style="margin-top:0">Coming up (ET)</h2>
+<!--EVENTS-->
+<ol class="ev">
+<li><time datetime="2026-10-17T11:00-04:00">Sat Oct 17, 11:00 AM ET</time>Exit-reason poll opens on X. Anonymous X poll: tell us why people leave. Runs 3 days. No wallets, no names.</li>
+<li><time datetime="2026-10-20T11:00-04:00">Tue Oct 20, 11:00 AM ET</time>Exit-reason poll closes on X. Last call to vote in the 3-day exit-reason poll.</li>
+</ol>
+<!--/EVENTS-->
+</div>
+<aside class="disc" aria-label="Disclosure"><!--DISC-->Tim created $BUNKY &amp; holds ~29.4% (incl. 20.48% locked till Jan 1, 2027), as of Oct 16. Launched via QSPHINX. Not financial advice.<!--/DISC--></aside>
+</main><footer><a href="../">Home</a> · <a href="../holders/">Bunker Ledger</a> · <a href="../pfp/">Wear the bunker ring</a> · Not financial advice. 🦭</footer></div></body></html>

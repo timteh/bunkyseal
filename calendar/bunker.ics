@@ -1,0 +1,55 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//BunkySeal//Bunker Calendar//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+X-WR-CALNAME:Bunker Seal ($BUNKY) calendar
+X-WR-TIMEZONE:America/New_York
+X-WR-CALDESC:Scheduled public $BUNKY moments. Opt-in\, unsubscribe any time
+ . Tim created $BUNKY & holds ~29.4% (incl. 20.48% locked till Jan 1\, 2027
+ )\, as of Oct 16. Launched via QSPHINX. Not financial advice.
+REFRESH-INTERVAL;VALUE=DURATION:PT12H
+X-PUBLISHED-TTL:PT12H
+BEGIN:VTIMEZONE
+TZID:America/New_York
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0400
+TZNAME:EDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0400
+TZOFFSETTO:-0500
+TZNAME:EST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:exit-poll-open@bunkyseal
+DTSTAMP:20261016T210806Z
+DTSTART;TZID=America/New_York:20261017T110000
+DTEND;TZID=America/New_York:20261017T113000
+SUMMARY:Exit-reason poll opens on X
+DESCRIPTION:Anonymous X poll: tell us why people leave. Runs 3 days. No wal
+ lets\, no names.\nhttps://x.com/BunkySeal\n\nTim created $BUNKY & holds ~2
+ 9.4% (incl. 20.48% locked till Jan 1\, 2027)\, as of Oct 16. Launched via 
+ QSPHINX. Not financial advice.
+URL:https://x.com/BunkySeal
+TRANSP:TRANSPARENT
+END:VEVENT
+BEGIN:VEVENT
+UID:exit-poll-close@bunkyseal
+DTSTAMP:20261016T210806Z
+DTSTART;TZID=America/New_York:20261020T110000
+DTEND;TZID=America/New_York:20261020T111500
+SUMMARY:Exit-reason poll closes on X
+DESCRIPTION:Last call to vote in the 3-day exit-reason poll.\nhttps://x.com
+ /BunkySeal\n\nTim created $BUNKY & holds ~29.4% (incl. 20.48% locked till 
+ Jan 1\, 2027)\, as of Oct 16. Launched via QSPHINX. Not financial advice.
+URL:https://x.com/BunkySeal
+TRANSP:TRANSPARENT
+END:VEVENT
+END:VCALENDAR
