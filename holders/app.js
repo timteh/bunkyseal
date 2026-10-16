@@ -1,0 +1,25 @@
+const LABELS={holders_real:"Real holders",holders_total:"Total holders",curve_pct:"Bonding curve %",curve_token_balance:"Tokens left on curve",tg_members:"Telegram members",x_followers:"X followers",bluesky_followers:"Bluesky followers",discord_members:"Discord members"};
+const SHOW=Object.keys(LABELS);
+const esc=s=>String(s).replace(/[&<>"]/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[c]));
+const $=s=>document.querySelector(s);
+function fail(msg){const b=$("#banner");b.hidden=false;b.textContent=msg;}
+function fmt(m,v){if(v==null)return"—";if(m.endsWith("pct"))return Number(v).toFixed(2)+"%";return Math.round(Number(v)).toLocaleString();}
+function row(name,m){const tr=document.createElement("tr");let val;
+ if(name.startsWith("holders")&&(m==null||m.value==null))val="Holder count unavailable — no free public source yet";else val=fmt(name,m&&m.value);
+ const u=m&&m.source_url||"";const src=/^https:\/\//.test(u)?`<a href="${esc(u)}" rel="noopener nofollow">source</a>`:(u?esc(u):"no source");
+ const S=m&&(m.stale?"STALE":m.status);const st=S?`<span class="st ${esc(S)}">${esc(S)}</span>`:"";
+ tr.innerHTML=`<td>${esc(LABELS[name]||name)}<br><span class="meta">last updated ${esc(m&&m.ts_et||"never")} · ${src}</span> ${st}</td><td class="v">${esc(val)}</td>`;return tr;}
+function chart(pts,label){const W=600,H=260,p=30;if(pts.length<2){$("#chart").textContent="Not enough data points yet.";return;}
+ const xs=pts.map((_,i)=>i),ys=pts.map(q=>Number(q[1]));const mn=Math.min(...ys),mx=Math.max(...ys),r=mx-mn||1;
+ const P=pts.map((q,i)=>[p+i*(W-2*p)/(pts.length-1),H-p-(ys[i]-mn)*(H-2*p)/r]);
+ $("#chart").innerHTML=`<svg viewBox="0 0 ${W} ${H}"><rect width="${W}" height="${H}" fill="none"/><polyline fill="none" stroke="#556b2f" stroke-width="3" points="${P.map(a=>a.join(",")).join(" ")}"/>${P.map(a=>`<circle cx="${a[0]}" cy="${a[1]}" r="3" fill="#1d1d1b"/>`).join("")}<text x="${p}" y="${H-6}" font-size="12">${esc(pts[0][0])}</text><text x="${W-p}" y="${H-6}" font-size="12" text-anchor="end">${esc(pts[pts.length-1][0])}</text></svg>`;
+ $("#chart-title").textContent=label;}
+fetch("data.json",{cache:"no-store"}).then(r=>{if(!r.ok)throw 0;return r.json()}).then(d=>{
+ $("#gen").textContent="Data built "+(d.generated_at_et||"unknown");
+ if(d.error){fail("Stats are unavailable right now: the metrics log could not be read.");}
+ const M=d.metrics||{};const tb=$("#tbl tbody");
+ SHOW.forEach(n=>tb.appendChild(row(n,M[n])));
+ if(SHOW.some(n=>M[n]&&(M[n].stale||M[n].status==="STALE")))fail("Some numbers are more than 2 hours old and marked STALE.");
+ const s=d.series||{};const h=(s.holders_real||[]);
+ if(h.length>=2){chart(h,"Real holders over time");}else{chart(s.curve_pct||[],"Bonding curve % over time");$("#chart-note").textContent="Holder history isn't available yet, so this shows curve % instead.";}
+}).catch(()=>{fail("Couldn't load the stats right now. The data file is missing or broken.");$("#chart").textContent="No data.";});
