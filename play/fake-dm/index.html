@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta http-equiv="Content-Security-Policy" content="default-src 'none'; script-src 'self'; style-src 'self'; img-src 'self'; base-uri 'none'; form-action 'none'">
+<meta name="referrer" content="no-referrer">
+<title>Spot the Fake DM ($BUNKY)</title>
+<link rel="icon" href="../art/bolt.svg" type="image/svg+xml">
+<link rel="stylesheet" href="../style.css">
+<link rel="stylesheet" href="fakedm.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to game</a>
+<div class="w">
+<header>
+<img class="mascot" src="../art/02-helmet-on.svg" alt="" width="64" height="64">
+<div>
+<h1>Spot the Fake DM</h1>
+<p class="sub">Eight messages. Some are scams. Tap Scam or Legit, then see the red flag.</p>
+</div>
+</header>
+<main id="main">
+<p class="rule">We never ask for your seed phrase or wallet in a DM.</p>
+<section id="intro" aria-label="Start">
+<button type="button" id="btn-start" class="primary" hidden>Start</button>
+</section>
+<section id="game" aria-labelledby="prog" hidden>
+<h2 id="prog" class="meta-line" tabindex="-1">Card 1 of 8</h2>
+<article id="card" class="dm" aria-label="Training example message">
+<div class="dm-head"><span class="avatar" aria-hidden="true"></span><p id="who" class="who"></p></div>
+<div id="dm-body" class="dm-body">
+<p id="msg" class="msg"></p>
+<div id="wm" class="wm" aria-hidden="true"><span class="wm-txt">TRAINING EXAMPLE</span></div>
+</div>
+</article>
+<div id="choices" class="choices" role="group" aria-labelledby="prog">
+<button type="button" id="btn-scam" data-a="fake" aria-pressed="false">Scam</button>
+<button type="button" id="btn-legit" data-a="legit" aria-pressed="false">Legit</button>
+</div>
+<div id="reveal" class="reveal" tabindex="-1" aria-live="polite"></div>
+<button type="button" id="btn-next" class="primary" hidden>Next</button>
+</section>
+<section id="end" aria-labelledby="end-title" hidden>
+<h2 id="end-title" tabindex="-1"></h2>
+<p id="end-rule"></p>
+<button type="button" id="btn-again" class="primary">Play again</button>
+</section>
+<noscript><p class="note">This game needs JavaScript.</p></noscript>
+</main>
+<aside class="disclosure" aria-label="Creator holdings disclosure">
+<p id="disclosure">Tim created $BUNKY & holds ~29.4% (incl. 20.48% locked till Jan 1, 2027), as of Oct 16. Launched via QSPHINX. Not financial advice.</p>
+</aside>
+</div>
+<script src="cards.js"></script>
+<script src="fakedm.js"></script>
+</body>
+</html>
