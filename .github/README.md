@@ -13,7 +13,7 @@ Other coins with similar names exist on Solana. Match every character of the add
 ## How we count real holders
 
 - A real holder is a wallet that holds at least 10,000 tokens.
-- We leave out wallets that aren't outside holders: the pump.fun bonding curve, the Streamflow lock escrow, Tim's three disclosed wallets (4MJJ, C7QW, 5JSN) and the QSPHINX deployer.
+- We leave out wallets that aren't outside holders: the pump.fun bonding curve, the Streamflow lock escrow (20.48% lock) and the 1.00% lock escrow (till Oct 31, 2026, 12:00 PM ET), Tim's three disclosed wallets (4MJJ, C7QW, 5JSN) and the QSPHINX deployer.
 - A stayer is an outside wallet that got its first tokens from the curve between 48 and 24 hours ago and still holds at least 10,000 tokens now. A wallet's first tokens have to be at least a day old before it can count, so this window runs a day behind.
 - Counts come from public Solana RPC data. If a lookup fails, we record an error and leave the number blank. We never fill in a guess.
 
@@ -24,6 +24,10 @@ You can check how long an address has been holding in our daily snapshot on the 
 21.48% of supply is locked via Streamflow: 20.48% until Jan 1, 2027, and 1.00% until Oct 31, 2026, 12:00 PM ET (as of Oct 17, 10:32 AM ET). You can view the lock contract here:
 
 https://app.streamflow.finance/contract/solana/mainnet/DB4acnCfvLX2ReYFn88ExkXXLXK12xYXjqSGimQxG8Ke
+
+1.00% lock (till Oct 31, 2026, 12:00 PM ET):
+
+[91r7…iqC48](https://app.streamflow.finance/contract/solana/mainnet/91r7NPTmW6D1ruCtPvRmzKiZJYmybRDsGQrYE2JiqC48)
 
 ## Bot roles
 
