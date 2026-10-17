@@ -38,9 +38,7 @@ Both workflows are in `.github/workflows/`.
 
 ## Safety
 
-We never ask for keys or seeds.
-
-Official accounts won't ask for keys, seeds or wallet connects. Ignore anyone who messages you offering help.
+Staff will never ask for your seed phrase, private key or a wallet connect. Ignore anyone who messages you offering help.
 
 ## Links
 
