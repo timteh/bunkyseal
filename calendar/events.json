@@ -1,6 +1,6 @@
 {
   "_note": "Only real, scheduled PUBLIC moments that have an owner routine. No price, no wallet, no 'daily' promises. Add/remove rows, then run: python3 build_ics.py",
-  "disclosure": "Tim created $BUNKY & holds ~29.4% (incl. 20.48% locked till Jan 1, 2027), as of Oct 16. Launched via QSPHINX. Not financial advice.",
+  "disclosure": "Tim created $BUNKY & holds ~30.8% (incl. 21.48% locked: 20.48% till Jan 1, 2027 and 1.00% till Oct 31, 2026, 12:00 PM ET), as of Oct 17, 10:32 AM ET. Launched via QSPHINX. Not financial advice.",
   "events": [
     {
       "id": "exit-poll-open",

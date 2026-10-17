@@ -2,7 +2,7 @@
 
 This repo is the source of the Bunker Seal site: https://timteh.github.io/bunkyseal/
 
-Tim created $BUNKY & holds ~29.4% (incl. 20.48% locked till Jan 1, 2027), as of Oct 16, 10:59 PM ET. Launched via QSPHINX. Not financial advice.
+Tim created $BUNKY & holds ~30.8% (incl. 21.48% locked: 20.48% till Jan 1, 2027 and 1.00% till Oct 31, 2026, 12:00 PM ET), as of Oct 17, 10:32 AM ET. Launched via QSPHINX. Not financial advice.
 
 ## The only mint
 
@@ -21,7 +21,7 @@ You can check how long an address has been holding in our daily snapshot on the 
 
 ## The lock
 
-About 20.48% of supply is locked on Streamflow until Jan 1, 2027, with a single unlock. The lock can't be cancelled. You can view the lock contract here:
+21.48% of supply is locked via Streamflow: 20.48% until Jan 1, 2027, and 1.00% until Oct 31, 2026, 12:00 PM ET (as of Oct 17, 10:32 AM ET). You can view the lock contract here:
 
 https://app.streamflow.finance/contract/solana/mainnet/DB4acnCfvLX2ReYFn88ExkXXLXK12xYXjqSGimQxG8Ke
 
