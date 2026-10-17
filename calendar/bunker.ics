@@ -6,9 +6,9 @@ METHOD:PUBLISH
 X-WR-CALNAME:Bunker Seal ($BUNKY) calendar
 X-WR-TIMEZONE:America/New_York
 X-WR-CALDESC:Scheduled public $BUNKY moments. Opt-in\, unsubscribe any time
- . Tim created $BUNKY & holds ~29.4% (incl. 20.48% locked till Jan 1\, 2027
- )\, as of Oct 16\, 10:59 PM ET. Launched via QSPHINX. Not financial advice
- .
+ . Tim created $BUNKY & holds ~30.8% (incl. 21.48% locked: 20.48% till Jan 
+ 1\, 2027 and 1.00% till Oct 31\, 2026\, 12:00 PM ET)\, as of Oct 17\, 10:3
+ 2 AM ET. Launched via QSPHINX. Not financial advice.
 REFRESH-INTERVAL;VALUE=DURATION:PT12H
 X-PUBLISHED-TTL:PT12H
 BEGIN:VTIMEZONE
@@ -30,29 +30,30 @@ END:STANDARD
 END:VTIMEZONE
 BEGIN:VEVENT
 UID:exit-poll-open@bunkyseal
-DTSTAMP:20261017T054847Z
-SEQUENCE:1
+DTSTAMP:20261017T144254Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261017T110000
 DTEND;TZID=America/New_York:20261017T113000
 SUMMARY:Exit-reason poll opens on X
 DESCRIPTION:Anonymous X poll: tell us why people leave. Runs 3 days. No wal
- lets\, no names.\nhttps://x.com/BunkySeal\n\nTim created $BUNKY & holds ~2
- 9.4% (incl. 20.48% locked till Jan 1\, 2027)\, as of Oct 16\, 10:59 PM ET.
-  Launched via QSPHINX. Not financial advice.
+ lets\, no names.\nhttps://x.com/BunkySeal\n\nTim created $BUNKY & holds ~3
+ 0.8% (incl. 21.48% locked: 20.48% till Jan 1\, 2027 and 1.00% till Oct 31\
+ , 2026\, 12:00 PM ET)\, as of Oct 17\, 10:32 AM ET. Launched via QSPHINX. 
+ Not financial advice.
 URL:https://x.com/BunkySeal
 TRANSP:TRANSPARENT
 END:VEVENT
 BEGIN:VEVENT
 UID:exit-poll-close@bunkyseal
-DTSTAMP:20261017T054847Z
-SEQUENCE:1
+DTSTAMP:20261017T144254Z
+SEQUENCE:2
 DTSTART;TZID=America/New_York:20261020T110000
 DTEND;TZID=America/New_York:20261020T111500
 SUMMARY:Exit-reason poll closes on X
 DESCRIPTION:Last call to vote in the 3-day exit-reason poll.\nhttps://x.com
- /BunkySeal\n\nTim created $BUNKY & holds ~29.4% (incl. 20.48% locked till 
- Jan 1\, 2027)\, as of Oct 16\, 10:59 PM ET. Launched via QSPHINX. Not fina
- ncial advice.
+ /BunkySeal\n\nTim created $BUNKY & holds ~30.8% (incl. 21.48% locked: 20.4
+ 8% till Jan 1\, 2027 and 1.00% till Oct 31\, 2026\, 12:00 PM ET)\, as of O
+ ct 17\, 10:32 AM ET. Launched via QSPHINX. Not financial advice.
 URL:https://x.com/BunkySeal
 TRANSP:TRANSPARENT
 END:VEVENT
