@@ -1,0 +1,55 @@
+{
+ "snapshot_utc": "2026-10-17T01:28:59Z",
+ "ledger_start_utc": "2026-10-17T01:26:47Z",
+ "salt": "de879b203004929a5048c869b49e6b95",
+ "entries": {
+  "0df79fad916526b451eb27a33299ceaf2e70009ab139122ef9ae9b68c3594853": {
+   "since": "2026-10-16",
+   "label": null
+  },
+  "1b1d1773e2d56f994d0dec0e660d6563f24f5d34a9b2b712e934ffc2e858142a": {
+   "since": "2026-10-16",
+   "label": null
+  },
+  "1f70420666f7297e3df51613c42010bcb028080b73746539bd0a2a6fd5f62c1e": {
+   "since": "2026-10-16",
+   "label": "lock"
+  },
+  "3b57d4a80b8c50ed53d3e5fa37c2fb1b71f9a550a606af8ad2b94ceabcfbc321": {
+   "since": "2026-10-16",
+   "label": null
+  },
+  "3e64534ed244e08fba0b781e92a4031c746a642138a221f7c5c4dc23c36814dd": {
+   "since": "2026-10-16",
+   "label": null
+  },
+  "a6a8289dcbc1e59ed462940400bfebd3618e71a1b29d60344be9679b072bbd50": {
+   "since": "2026-10-16",
+   "label": null
+  },
+  "b61f90f7dc5d120cb87cd26562cf145a41ff32884e838ba2b965facb86bb486f": {
+   "since": "2026-10-16",
+   "label": null
+  },
+  "cfa3c8c7b47aa5fd8fedd1bfd71aaa0b30dbb3d1cf9636b6a82327a933f588f6": {
+   "since": "2026-10-16",
+   "label": "creator"
+  },
+  "cfc04ed65bc69974ecf38c632109d95bb3dfe997fb996f9dc73ca39ca0df2da9": {
+   "since": "2026-10-16",
+   "label": "creator"
+  },
+  "d69b1cb891b417546f975cdb1b11de4ca6bd41dbd3794d43f1785521fe2ac52f": {
+   "since": "2026-10-16",
+   "label": null
+  },
+  "e19d9358811c35677c01794618fae1041b317bee6c4697bd38eab21b6112694f": {
+   "since": "2026-10-16",
+   "label": "creator"
+  },
+  "e2e05fb9cd99235aaf1a1b6be67bf950f65c76cc31594c0feb122373708a0195": {
+   "since": "2026-10-16",
+   "label": null
+  }
+ }
+}

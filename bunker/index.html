@@ -1,0 +1,47 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bunker hold-check ($BUNKY)</title><meta name="description" content="Paste a Solana address to see how long it has been holding $BUNKY in our daily snapshot."><style>
+body{margin:0;font-family:system-ui,sans-serif;background:#E8A70C;color:#1b1b1b;line-height:1.6}
+.w{max-width:760px;margin:auto;padding:24px}header{text-align:center;padding:24px 0}
+h1{font-size:2.2em;margin:.3em 0}h2{color:#4b5d2a;border-bottom:3px solid #1b1b1b}
+button,.btn{background:#4b5d2a;color:#fff;border:3px solid #1b1b1b;padding:10px 16px;border-radius:8px;font-weight:700;text-decoration:none;cursor:pointer;display:inline-block;margin:4px;min-height:44px;box-sizing:border-box;font-size:16px}
+.box{background:#fff;border:3px solid #1b1b1b;padding:16px;border-radius:10px}footer{text-align:center;font-size:.85em;padding:30px}
+label{font-weight:700;display:block}input{width:100%;box-sizing:border-box;font-size:16px;min-height:44px;padding:8px;border:3px solid #1b1b1b;border-radius:8px;font-family:monospace;word-break:break-all}
+#result{margin:12px 0 0;min-height:3em;word-break:break-word}#result:focus{outline:4px solid #1b1b1b;outline-offset:3px}
+.chip{display:inline-block;background:#4b5d2a;color:#fff;border-radius:999px;padding:2px 12px;font-weight:700;margin-left:6px}
+.skip{position:absolute;left:-999px;background:#fff;color:#1b1b1b;border:3px solid #1b1b1b;padding:8px 12px;border-radius:8px;z-index:9}.skip:focus{left:8px}
+a:focus-visible,button:focus-visible,input:focus-visible{outline:4px solid #1b1b1b;outline-offset:3px;box-shadow:0 0 0 7px #fff}a{color:#1b1b1b}.note{font-size:.85em;margin:.6em 0 0}</style></head><body><a class="skip" href="#main">Skip to content</a><div class="w">
+<header><p class="box" id="disc-head">Tim created $BUNKY & holds ~29.4% (incl. 20.48% locked till Jan 1, 2027), as of Oct 16. Launched via QSPHINX. Not financial advice.</p><h1>Bunker hold-check</h1><p>Paste a Solana address to see how long it has been holding $BUNKY in our daily snapshot.</p></header>
+<main id="main" tabindex="-1">
+<div class="box"><form id="f" novalidate>
+<label for="addr">Solana address</label>
+<input id="addr" name="addr" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" inputmode="text" aria-describedby="hint">
+<p id="hint" class="note">Checked on this page only. The address is hashed here and is not saved or sent.</p>
+<button type="submit">Check</button></form>
+<div id="result" role="status" aria-live="polite" tabindex="-1"></div></div>
+<p class="note">Dates start from our first daily snapshot, so "since at least" is the earliest date we can show.</p>
+<p class="note"><a href="../">Back to the $BUNKY home page</a></p>
+</main>
+<footer><p>Tim created $BUNKY & holds ~29.4% (incl. 20.48% locked till Jan 1, 2027), as of Oct 16. Launched via QSPHINX. Not financial advice.</p></footer></div>
+<script>
+(function(){
+var R=document.getElementById('result'),I=document.getElementById('addr'),S=null,
+L={creator:'Creator wallet',lock:'Lock',deployer:'Deployer'},B58=/^[1-9A-HJ-NP-Za-km-z]{32,44}$/;
+I.value='';
+function et(u){try{return new Date(u).toLocaleString('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit'})+' ET'}catch(e){return u}}
+function show(nodes){R.textContent='';nodes.forEach(function(n){R.appendChild(n)});R.focus()}
+function p(t){var e=document.createElement('p');e.textContent=t;e.style.margin='.2em 0';return e}
+function found(en){var a=p('Holding since at least '+en.since+' (first seen in our daily snapshot)');
+ if(en.label&&L[en.label]){var c=document.createElement('span');c.className='chip';c.textContent=L[en.label];a.appendChild(c)}
+ show([a,p('Snapshot: '+et(S.snapshot_utc))])}
+function nf(){show([p('Not found in the snapshot from '+et(S.snapshot_utc)+'. New holders show up after the next daily snapshot.')])}
+function bad(){show([p("That doesn't look like a Solana address.")])}
+function err(m){show([p(m||'Check unavailable here.')])}
+function load(){if(S)return Promise.resolve(S);return fetch('./snapshot.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(j){S=j;return j})}
+function hex(b){return Array.prototype.map.call(new Uint8Array(b),function(x){return x.toString(16).padStart(2,'0')}).join('')}
+document.getElementById('f').addEventListener('submit',function(ev){ev.preventDefault();var v=I.value.trim();
+ if(!B58.test(v)){bad();I.focus();return}
+ if(!window.isSecureContext||!window.crypto||!crypto.subtle){err();return}
+ load().then(function(s){return crypto.subtle.digest('SHA-256',new TextEncoder().encode(s.salt+v)).then(function(d){var e=s.entries[hex(d)];e?found(e):nf()})})
+ .catch(function(){err('Check unavailable here. The snapshot could not be loaded.')})});
+})();
+</script></body></html>
