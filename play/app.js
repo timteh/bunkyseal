@@ -101,17 +101,14 @@
     // Copy: Scribe 2026-10-16 14:45 draft, section 2 (pending DA)
     var n = round.taps.length, hasPar = Number.isInteger(round.par);
     $('result-line').textContent = !round.sealed
-      ? 'The door held out after ' + cfg.max_taps + ' taps. A new bunker opens at midnight ET.'
+      ? cfg.max_taps + ' taps used and the door is still open. No harm done. A new puzzle goes up at midnight ET.'
       : !hasPar ? 'Sealed in ' + n + ' taps.'
       : n <= round.par ? 'Sealed in ' + n + ' taps. Par was ' + round.par + '. Nice work.'
       : 'Sealed in ' + n + ' taps. Par was ' + round.par + ". The door's shut, and that's what counts.";
     $('result-grid').textContent = gridText(round.board);
-    var ld = BS.load();
-    var st = ld.ok ? BS.streak(ld.data, today) : { streak: 0 };
-    $('streak').textContent = 'Streak: ' + st.streak;
     setupShare();
     show('result', true);
-    tick(); setInterval(tick, 30000);
+    checkRollover(); setInterval(checkRollover, 30000);
     if (focus) $('result-title').focus();
   }
 
@@ -143,18 +140,6 @@
     ta.value = text; show('fallback', true); ta.focus(); ta.select();
   }
 
-  function etParts(now) {
-    var p = {};
-    new Intl.DateTimeFormat('en-US', { timeZone: 'America/New_York', hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' })
-      .formatToParts(now).forEach(function (x) { p[x.type] = +x.value; });
-    return p;
-  }
-  function tick() {
-    var p = etParts(new Date()), secs = 86400 - ((p.hour % 24) * 3600 + p.minute * 60 + p.second);
-    var h = Math.floor(secs / 3600), m = Math.floor((secs % 3600) / 60);
-    $('countdown').textContent = 'Next puzzle in ' + h + 'h ' + (m < 10 ? '0' : '') + m + 'm';
-    checkRollover();
-  }
   function checkRollover() {
     if (today && BP.todayET() !== today) show('rollover', true); // never wipes the round
   }
@@ -188,7 +173,7 @@
     $('pnum').textContent = 'Puzzle #' + (Number.isInteger(puzzle.n) ? puzzle.n : 'unavailable');
     show('preview', !!puzzle.preview); show('preview-line', !!puzzle.preview);
     status('');
-    if (round.done) status("You've played today's bunker. Come back after midnight ET for the next one.");
+    if (round.done) status("You've played this one. A new puzzle goes up at midnight ET, whenever you want it.");
     buildBoard(); show('play', true); render();
   }).catch(function () {
     status(UNAVAILABLE);

@@ -2,7 +2,7 @@
 
 This repo is the source of the Bunker Seal site: https://timteh.github.io/bunkyseal/
 
-Tim created $BUNKY & holds ~30.8% (incl. 21.48% locked: 20.48% till Jan 1, 2027 and 1.00% till Oct 31, 2026, 12:00 PM ET), as of Oct 17, 10:32 AM ET. Launched via QSPHINX. Not financial advice.
+Tim created $BUNKY & holds ~28.1% (incl. 21.48% locked: 20.48% till Jan 1, 2027 and 1.00% till Oct 31, 2026, 12:00 PM ET), as of Oct 18, 7:25 AM ET. Launched via QSPHINX. Not financial advice.
 
 ## The only mint
 

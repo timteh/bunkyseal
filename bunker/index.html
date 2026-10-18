@@ -1,5 +1,5 @@
 <!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>Bunker hold-check ($BUNKY)</title><meta name="description" content="Paste a Solana address to see how long it has been holding $BUNKY in our daily snapshot."><style>
+<title>Bunker hold-check ($BUNKY)</title><meta name="description" content="Paste a Solana address to see how long it has been holding $BUNKY in our daily holder list."><style>.an{font-weight:700}
 body{margin:0;font-family:system-ui,sans-serif;background:#E8A70C;color:#1b1b1b;line-height:1.6}
 .w{max-width:760px;margin:auto;padding:24px}header{text-align:center;padding:24px 0}
 h1{font-size:2.2em;margin:.3em 0}h2{color:#4b5d2a;border-bottom:3px solid #1b1b1b}
@@ -10,37 +10,44 @@ label{font-weight:700;display:block}input{width:100%;box-sizing:border-box;font-
 .chip{display:inline-block;background:#4b5d2a;color:#fff;border-radius:999px;padding:2px 12px;font-weight:700;margin-left:6px}
 .skip{position:absolute;left:-999px;background:#fff;color:#1b1b1b;border:3px solid #1b1b1b;padding:8px 12px;border-radius:8px;z-index:9}.skip:focus{left:8px}
 a:focus-visible,button:focus-visible,input:focus-visible{outline:4px solid #1b1b1b;outline-offset:3px;box-shadow:0 0 0 7px #fff}a{color:#1b1b1b}.note{font-size:.85em;margin:.6em 0 0}#friend{margin-top:16px}#friend h2{margin-top:0;font-size:1.3em}#friend textarea{width:100%;box-sizing:border-box;font-size:16px;min-height:8em;padding:8px;border:3px solid #1b1b1b;border-radius:8px;font-family:inherit}</style></head><body><a class="skip" href="#main">Skip to content</a><div class="w">
-<header><p class="box" id="disc-head">Tim created $BUNKY & holds ~30.8% (incl. 21.48% locked: 20.48% till Jan 1, 2027 and 1.00% till Oct 31, 2026, 12:00 PM ET), as of Oct 17, 10:32 AM ET. Launched via QSPHINX. Not financial advice.</p><h1>Bunker hold-check</h1><p>Paste a Solana address to see how long it has been holding $BUNKY in our daily snapshot.</p></header>
+<header><p class="box" id="disc-head">Tim created $BUNKY & holds ~28.1% (incl. 21.48% locked: 20.48% till Jan 1, 2027 and 1.00% till Oct 31, 2026, 12:00 PM ET), as of Oct 18, 7:25 AM ET. Launched via QSPHINX. Not financial advice.</p><h1>Bunker hold-check</h1><p>Paste a Solana address to see how long it has been holding $BUNKY in our daily holder list.</p></header>
 <main id="main" tabindex="-1">
-<div class="box"><form id="f" novalidate>
+<div class="box"><p id="airdrop-note"><strong>This check is not an airdrop list and has nothing to do with who gets the airdrop.</strong></p><form id="f" novalidate>
 <label for="addr">Solana address</label>
 <input id="addr" name="addr" type="text" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" inputmode="text" aria-describedby="hint">
 <p id="hint" class="note">Checked on this page only. The address is hashed here and is not saved or sent.</p>
 <button type="submit">Check</button></form>
 <div id="result" role="status" aria-live="polite" tabindex="-1"></div></div>
 <section class="box" id="friend" aria-labelledby="friend-h" hidden><h2 id="friend-h">Know one person who'd like the seal?</h2><p>If you want to tell someone, copy a message for them. Say you hold it, send it to one person who'd expect it, and skip price talk.</p><button type="button" id="friend-copy">Copy a message for them</button><p id="friend-status" class="note" role="status" aria-live="polite"></p><div id="friend-fb" hidden><label for="friend-text">Message to copy</label><textarea id="friend-text" readonly></textarea></div><p class="note">Nothing is tracked and nobody gets rewarded for sharing.</p><p class="note"><a href="../start/">Read the setup map first</a></p></section>
-<p class="note">Dates start from our first daily snapshot, so "since at least" is the earliest date we can show.</p>
+<p class="note">Dates start from our first daily holder list, so "since at least" is the earliest date we can show.</p>
+<hr>
+<section id="room-rules" aria-labelledby="room-rules-h"><h2 id="room-rules-h">Bunker rules, written by the room</h2><p>Rules the room finished in its own words during Bunker School in our Telegram group, shown without names. This is not a staff notice; the official safety line stays separate.</p><p id="room-rules-empty">No rules yet. Lesson 1 goes up in the Telegram group.</p></section>
+<section id="canon" aria-labelledby="canon-h"><h2 id="canon-h">Bunker canon</h2><p>Unfinished bunker lines, finished by the room in our Telegram group. House rules: your own words, no price talk, no links, no wallet addresses; endings that fit the house rules go in, shown without names. There's nothing to win, nothing to buy.</p><p id="canon-empty">No endings yet. The first unfinished line goes up in the Telegram group.</p></section>
 <p class="note"><a href="../">Back to the $BUNKY home page</a></p>
 </main>
-<footer><p>Tim created $BUNKY & holds ~30.8% (incl. 21.48% locked: 20.48% till Jan 1, 2027 and 1.00% till Oct 31, 2026, 12:00 PM ET), as of Oct 17, 10:32 AM ET. Launched via QSPHINX. Not financial advice.</p></footer></div>
+<footer><p>Tim created $BUNKY & holds ~28.1% (incl. 21.48% locked: 20.48% till Jan 1, 2027 and 1.00% till Oct 31, 2026, 12:00 PM ET), as of Oct 18, 7:25 AM ET. Launched via QSPHINX. Not financial advice.</p></footer>
+<aside id="bk-official" aria-label="Official $BUNKY places"></aside>
+<script src="../official.js"></script>
+</div>
 <script>
 (function(){
 var R=document.getElementById('result'),I=document.getElementById('addr'),S=null,
 L={creator:'Creator wallet',lock:'Lock',deployer:'Deployer'},B58=/^[1-9A-HJ-NP-Za-km-z]{32,44}$/;
 I.value='';
-var FRIEND_MSG='Holder here (I own some $BUNKY). One honest link if you want to look: https://timteh.github.io/bunkyseal/start/\nTim created $BUNKY & holds ~30.8% (incl. 21.48% locked: 20.48% till Jan 1, 2027 and 1.00% till Oct 31, 2026, 12:00 PM ET), as of Oct 17, 10:32 AM ET. Launched via QSPHINX. Not financial advice.',
+var FRIEND_MSG='Holder here (I own some $BUNKY). One honest link if you want to look: https://timteh.github.io/bunkyseal/start/\nTim created $BUNKY & holds ~28.1% (incl. 21.48% locked: 20.48% till Jan 1, 2027 and 1.00% till Oct 31, 2026, 12:00 PM ET), as of Oct 18, 7:25 AM ET. Launched via QSPHINX. Not financial advice.',
 FC=document.getElementById('friend'),FS=document.getElementById('friend-status'),FB=document.getElementById('friend-fb'),FT=document.getElementById('friend-text');
 function hideCard(){FC.hidden=true;FB.hidden=true;FS.textContent=''}
 function showCard(){FS.textContent='';FB.hidden=true;FC.hidden=false}
 function fallback(){FT.value=FRIEND_MSG;FB.hidden=false;FT.focus();FT.select();FS.textContent='Select the message below and copy it. Put it in your own words before you send it.'}
 document.getElementById('friend-copy').addEventListener('click',function(){try{navigator.clipboard.writeText(FRIEND_MSG).then(function(){FB.hidden=true;FS.textContent='Copied. Put it in your own words before you send it.'},fallback)}catch(e){fallback()}});
+var NOTE='This check is not an airdrop list and has nothing to do with who gets the airdrop.';
 function et(u){try{return new Date(u).toLocaleString('en-US',{timeZone:'America/New_York',month:'short',day:'numeric',year:'numeric',hour:'numeric',minute:'2-digit'})+' ET'}catch(e){return u}}
-function show(nodes){hideCard();R.textContent='';nodes.forEach(function(n){R.appendChild(n)});R.focus()}
+function show(nodes){hideCard();R.textContent='';nodes.forEach(function(n){R.appendChild(n)});var q=p(NOTE);q.className='an';R.appendChild(q);R.focus()}
 function p(t){var e=document.createElement('p');e.textContent=t;e.style.margin='.2em 0';return e}
-function found(en){var a=p('Holding since at least '+en.since+' (first seen in our daily snapshot)');
+function found(en){var a=p('Holding since at least '+en.since+' (first seen in our daily holder list)');
  if(en.label&&L[en.label]){var c=document.createElement('span');c.className='chip';c.textContent=L[en.label];a.appendChild(c)}
- show([a,p('Snapshot: '+et(S.snapshot_utc))]);showCard()}
-function nf(){show([p('Not found in the snapshot from '+et(S.snapshot_utc)+'. New holders show up after the next daily snapshot.')])}
+ show([a,p('Daily holder list: '+et(S.snapshot_utc))]);showCard()}
+function nf(){show([p('Not found in the daily holder list from '+et(S.snapshot_utc)+'. New holders show up in the next daily holder list.')])}
 function bad(){show([p("That doesn't look like a Solana address.")])}
 function err(m){show([p(m||'Check unavailable here.')])}
 function load(){if(S)return Promise.resolve(S);return fetch('./snapshot.json',{cache:'no-store'}).then(function(r){if(!r.ok)throw 0;return r.json()}).then(function(j){S=j;return j})}
@@ -49,6 +56,6 @@ var SEQ=0;document.getElementById('f').addEventListener('submit',function(ev){ev
  if(!B58.test(v)){bad();I.focus();return}
  if(!window.isSecureContext||!window.crypto||!crypto.subtle){err();return}
  load().then(function(s){return crypto.subtle.digest('SHA-256',new TextEncoder().encode(s.salt+v)).then(function(d){if(my!==SEQ)return;var e=s.entries[hex(d)];e?found(e):nf()})})
- .catch(function(){if(my!==SEQ)return;err('Check unavailable here. The snapshot could not be loaded.')})});
+ .catch(function(){if(my!==SEQ)return;err('Check unavailable here. The daily holder list could not be loaded.')})});
 })();
 </script></body></html>
