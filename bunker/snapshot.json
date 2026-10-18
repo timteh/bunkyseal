@@ -1,55 +1,55 @@
 {
- "snapshot_utc": "2026-10-17T08:04:30Z",
+ "snapshot_utc": "2026-10-18T13:00:11Z",
  "ledger_start_utc": "2026-10-17T01:26:47Z",
- "salt": "e430ffd114b15dd8829d4c3b6dd4dae5",
+ "salt": "61fe2e78e65e6c25005c4d77009f6c95",
  "entries": {
-  "1076a14370fbea549b30432fe28c91082d3ffcc7dca146b74b42729f6e66e7e7": {
-   "since": "2026-10-16",
-   "label": "creator"
-  },
-  "1107c9c85a9b0577f0592392d18789aacb8fa9d0bd29822155ab4815dfb10669": {
+  "16933d13de88fadec92d5b88c0cd2029a55980f7f8622f7cc9a6b133e5d1364c": {
    "since": "2026-10-16",
    "label": null
   },
-  "12377b64a1ec015b158cc5b279fb2cd06586cbebf7d779e09d6f7f7278804255": {
-   "since": "2026-10-16",
-   "label": null
-  },
-  "18c9831637e7f729df7b34aa468b5ee39a86368385aff113d01c225bc941947a": {
-   "since": "2026-10-16",
-   "label": null
-  },
-  "4d4dcb0cfec0eda648035b7a392ea80887dfc0d06ca73c32131d4763f038c46b": {
-   "since": "2026-10-16",
-   "label": null
-  },
-  "502792a6a8de8033eb55bd4fac919e2e5c65683e1be1984831688fd56b9b7075": {
+  "38636811cd51bc3fa4c5f7ba5c233d48e69460d04a2ea1ab787de1ddca9cfd88": {
    "since": "2026-10-16",
    "label": "lock"
   },
-  "533665dfa956ffedcf15d8624376962d91cb8d7edbbfae2d860435b5dbb67a18": {
+  "4d88bc89152df3215219726e76e2e9c0dc5a7ff21ab44bb46282296d0566542e": {
+   "since": "2026-10-18",
+   "label": null
+  },
+  "6d31c674d52a7bae7a3b1708eb8daef5e642a2ca2eaccfd15c0026c9eb5a205c": {
+   "since": "2026-10-16",
+   "label": "creator"
+  },
+  "722217c68babb08de00655c944f96ee014bdbb47546d89a3c10f13543be8b093": {
+   "since": "2026-10-16",
+   "label": "creator"
+  },
+  "76ea87f546e60fb04d281275823e2f6aeae5850ed470e98fd6cd4b05f625dbcf": {
+   "since": "2026-10-16",
+   "label": null
+  },
+  "8106ea445cda79558b1a9c4272309fb6f166ccfd32355ee2697a7e260882cd48": {
+   "since": "2026-10-16",
+   "label": null
+  },
+  "b2bba6cfdb14c5d2f7cd929071b1f0a8686251ca7c097c4ed36cdbf7e39f875c": {
+   "since": "2026-10-16",
+   "label": null
+  },
+  "ba92f7b482278577c28206eb5e592a1442b6b691d3d320f90c0d720d3d8a4146": {
+   "since": "2026-10-16",
+   "label": null
+  },
+  "d7e5197b498ea538eb80dd1029852c05754c5b767a8bd3cfd7d68dfcb32b1e6b": {
+   "since": "2026-10-16",
+   "label": null
+  },
+  "f14681d60d9610310a41c44d8f9c8d5a53bab4e51e7ad7b267685e62f2343957": {
+   "since": "2026-10-18",
+   "label": null
+  },
+  "f44ece3b37ad99e58a7d4a931e0c663c2910e2f1a0d46ac2d7834fb1dcb91073": {
    "since": "2026-10-16",
    "label": "lock"
-  },
-  "68b1efed9bf8e8961ffe04cbac8dbafb28ea67868c50739f6cb8a8f809902a29": {
-   "since": "2026-10-16",
-   "label": null
-  },
-  "73bf79c06c2f8668caa604280055fc19f465125b6af4fa527be7cc2a97fd3d13": {
-   "since": "2026-10-16",
-   "label": "creator"
-  },
-  "a5163e9e14d751378fa7cd888ba248551c1de0ec65620540a76ff8e8eb50d254": {
-   "since": "2026-10-16",
-   "label": null
-  },
-  "dbb26cf02568c310ed9a06d7c7e665c5fae1f28ccdf8fa4aaecfba752aeaf9c1": {
-   "since": "2026-10-16",
-   "label": "creator"
-  },
-  "fc34c3c8dc3beb31ac666ded01c9acb3e6081e6aaf0a46294eb3452f0fc21ebc": {
-   "since": "2026-10-16",
-   "label": null
   }
  }
 }
